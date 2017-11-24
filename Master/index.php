@@ -8,7 +8,7 @@
     $pageRequest = "home";
 
     if(isset($_GET["page"])){
-        $pageRequest = $_GET["page"];
+      $pageRequest = $_GET["page"];
     }
 
     //Incorporando los midlewares son codigos que se deben ejecutar
@@ -34,6 +34,12 @@
             break;
         case "productosform":
             require_once("controllers/productosform.control.php");
+            break;
+            case "vision":
+            require_once("controllers/vision.control.php");
+            break;
+            case "responsabilidad":
+            require_once("controllers/responsabilidad.control.php");
             break;
         case "logout":
             mw_setEstaLogueado("",false);

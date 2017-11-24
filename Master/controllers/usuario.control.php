@@ -25,10 +25,6 @@
       $txtNombre = $_POST["txtNombre"];
       $txtPswd = $_POST["txtPswd"];
       $txtPswdConf = $_POST["txtPswdConf"];
-
-
-
-
       if($txtNombre == "" || $txtMail == "" || $txtPswd == "" || $txtPswdConf == "")
       {
         $_SESSION["SsNombre"]=$txtNombre;
@@ -46,17 +42,12 @@
         else
         {
           if(usuarioExiste($txtMail) > 0){
-
             $_SESSION["SsNombre"]=$txtNombre;
             $_SESSION["SsEmail"]="";
             redirectWithMessage("Email ya existe","index.php?page=usuario");
           }
           else
           {
-
-
-
-
             $arrData = array(
               "usuario_nombre" => $txtNombre,
               "usuario_email" => $txtMail,

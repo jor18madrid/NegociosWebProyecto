@@ -18,7 +18,9 @@
                 <ul>
                     <li><a href="index.php?page=home">Home</a></li>
                     <li><a href="index.php?page=acerca">Acerca de Nosotros</a></li>
+                    <li><a href="index.php?page=vision">Vision</a></li>
                     <li><a href="index.php?page=login">Iniciar Sesión</a></li>
+                    <li><a href="index.php?page=responsabilidad">Responsabilidad</a></li>
                     <li><a href="index.php?page=usuario">Usuario</a></li>
                 </ul>
             </div>
@@ -26,7 +28,7 @@
                 {{{page_content}}}
             </div>
             <div class="footer">
-                Derechos Reservados 2016
+                Derechos Reservados 2017
             </div>
         </body>
     </html>
