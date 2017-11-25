@@ -2,6 +2,8 @@
 <html>
 <head>
   <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Anton|Oswald" rel="stylesheet">
 <head/>
 <title></title>
 <body>

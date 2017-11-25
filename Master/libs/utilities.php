@@ -11,9 +11,9 @@
       die();
     }
 
-    function soloMensaje($message)
+    function soloMensaje($message,$url="index.php")
     {
-      echo "<script>alert('$message'); window.location='$url';</script>";
+      echo "<script>confirm('$message'); window.location='$url';</script>";
       die();
     }
 

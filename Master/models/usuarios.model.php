@@ -43,7 +43,8 @@
   }
 
   function autenticarUsuario($arrUserData){
-    $arrErrores = array();
+  $arrErrores = array();
+  $errores="";
     //obtener los datos del usuario
     $usuario_email = $arrUserData["usuario_email"];
     $usuario_pswd = $arrUserData["usuario_pswd"];
@@ -60,7 +61,8 @@
               $sqlupdate = sprintf($sqlupdate, date('Y-m-d H:i:s'), $usuario["usuario_id"]);
               ejecutarNonQuery($sqlupdate);
           }else{
-              $arrErrores[] = "Credenciales no son Válidas.";
+              //$arrErrores[] = "Credenciales no son Válidas.";
+              $errores = "Credenciales no son Válidas.";
               //actualizar el registro para aumentar los fallos
               $usuario_est = $usuario["usuario_est"];
               if($usuario["usuario_pwdfail"] >= 3){
@@ -73,15 +75,18 @@
               ejecutarNonQuery($sqlupdate);
           }
       }else{
-        $arrErrores[] = "Usuario no se encuentra Activo";
+      //  $arrErrores[] = "Usuario no se encuentra Activo";
+      $errores = "Usuario no se encuentra Activo";
       }
     }else{
-      $arrErrores[] = "No se pudo encontrar el usuario.";
+      //$arrErrores[] = "No se pudo encontrar el usuario.";
+      $errores= "No se pudo encontrar el usuario.";
     }
     //vamos a obetner el usuario con el correo
     // estado, correo, contraseña encriptada, fecha ingreso, fallidos
 
-    return $arrErrores;
+  //  return $arrErrores;
+  return $errores;
   }
 
   function cambiarContrasenia($arrUserData){

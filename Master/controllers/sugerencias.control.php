@@ -7,9 +7,11 @@
       "texto" => "SUGERENCIAS"
     );
     addCssRef("public/css/Sugerencias.css");
-    renderizar("sugerencias", $datosPersonales);
+    renderizar("sugerencias", $datosPersonales,"loggedLayout.view.tpl");
   }
-
-
-  run();
+  if(mw_estaLogueado()){
+    run();
+  }else{
+      mw_redirectToLogin("index.php?page=sugerencias");
+  }
 ?>

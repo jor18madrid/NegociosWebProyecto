@@ -8,13 +8,10 @@
     );
 
     addCssRef("public/css/Vision.css");
-    renderizar("vision", $datosPersonales,"loggedLayout.view.tpl");
+    renderizar("vision", $datosPersonales);
   }
 
 
-  if(mw_estaLogueado()){
-    run();
-  }else{
-      mw_redirectToLogin("index.php?page=vision");
-  }
+  run();
+  
 ?>

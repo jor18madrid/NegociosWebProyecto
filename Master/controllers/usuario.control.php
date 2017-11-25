@@ -67,6 +67,7 @@
     $data = array("txtNombre" => $txtNombre,
                   "txtMail" => $txtMail,
                   );
+  
     renderizar("usuario",$data);
   }
   run();

@@ -13,7 +13,11 @@
     </header>
     <div class="Formulario">
       <h2>Datos Personales</h2>
+
       <form id="frmData">
+        <div class="ingresarDatos">
+
+
       <label for="TxtNombre">Nombre Completo</label>
       <input type="text" name="TxtNombre"
             id="TxtNombre" placeholder="Nombre Completo"
@@ -27,6 +31,7 @@
           <label for="txtNumero">Numero Telefonico</label>
           <input type="tel" name="txtNumero" id="txtNumero" placeholder="0000-0000"/>
               <br />
+              </div>
               <input type="submit" id="BtnEnviar" name="BtnEnviar"
                 value="Enviar" />
       </form>

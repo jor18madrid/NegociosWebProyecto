@@ -7,9 +7,12 @@
       "texto" => "SOPORTE TECNICO"
     );
     addCssRef("public/css/Soporte.css");
-    renderizar("soporte", $datosPersonales);
+    renderizar("soporte", $datosPersonales,"loggedLayout.view.tpl");
   }
 
-
-  run();
+  if(mw_estaLogueado()){
+    run();
+  }else{
+      mw_redirectToLogin("index.php?page=soporte");
+  }
 ?>

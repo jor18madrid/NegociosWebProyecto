@@ -13,23 +13,28 @@
     </header>
     <div class="Formulario">
       <h2>Sugerencia</h2>
-      <pre>
+
+
+
       <form id="frmData">
-        <label for="txtDate">Fecha Actual</label>
-        <input type="date" name="txtDate" id="txtDate" />
+        <div class="ingresarDatos">
+        <label for="txtDate" >Fecha Actual</label>
+        <input type="date"  name="txtDate" id="txtDate" />
         <br/>
         <label for="txtNombre">Nombre Completo</label>
-        <input type="text" name="txtNombre" id="txtNombre" placeholder="Nombre"/>
+        <input type="text"  name="txtNombre" id="txtNombre" placeholder="Nombre"/>
         <br/>
         <label for="txtCorreo">Correo electronico</label>
         <input type="email" name="txtCorreo" id="txtCorreo" placeholder="ejemplo@portales.com">
         <br/>
         <textarea style="width:290px;height:250px" name="TxtLongText" id="TxtLongText" placeholder="Ingrese Su Sugerencia"></textarea>
         <br/>
+        </div>
         <input type="button" name="btnEnviar" id="btnEnviar" value="Enviar sugerencia">
         <br/>
+
       </form>
-      </pre>
+
       <script src="public/js/Sugerencias.js"></script>
     </div>
   </body>

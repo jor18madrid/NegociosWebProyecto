@@ -1,9 +1,63 @@
+.Formulario{
+  background-color: #eee;
+  width: 480px;
+  border: 3px solid #000000;
+  box-shadow: 1px 1px 3px;
+  margin: 25px auto;
+  padding: 16px;
+  clear: both;
+  overflow: auto;
+}/* IDEA:Css copiado desde Soporte.css  */
+
+header{
+  font-family: 'Anton', sans-serif;
+  padding:1em 0.5em;
+  background-color: #696565;
+  width: 100;
+  color: white;
+  box-shadow: 1px solid #000;
+  text-align: left;
+}/* IDEA:Css copiado desde Vision.css  */
+.ingresarDatos input {
+margin-left: 9em;
+}
+.ingresarDatos label{
+  position: absolute;
+}/* IDEA: copiado de Sugerencia.css */
+
+.Usuario{
+  display: inline-block;
+  margin-left: 10.2em;
+  position: absolute;
+  margin-top: 0.5em;
+  color: white;
+}
+.Usuario input{
+  background-color: #696565;
+  border: none;
+}
+.Usuario img{
+  height: 45px;
+  position: absolute;
+}
+
+input#txtUsuarioLogueado{
+padding-left: 50px;
+
+}
+
+.Usuario :hover{
+  background-color: #696565;
+}
+/* IDEA: Funcionan para colocar el textbox tipo li y el icono a la par */
+
 body{
-    font-family:'Roboto', sans-serif;
+    font-family:'Oswald', sans-serif;
     font-size:16px;
     margin:0px;
     padding:0px;
 }
+
 body, .menu, .contenido, .footer {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -18,6 +72,7 @@ body, .menu, .contenido, .footer {
     text-align: center;
     box-shadow: 0px 0px 2px rgba(0,0,0,.8);
 }
+
 .menu ul{
     list-style: none;
     padding:0px;
@@ -27,6 +82,7 @@ body, .menu, .contenido, .footer {
     display:inline;
     color:white;
 }
+
 .menu ul li a{
     display:inline-block;
     color:white;
@@ -34,6 +90,7 @@ body, .menu, .contenido, .footer {
     padding:1em;
     margin:0px;
 }
+
 .menu ul li a:hover{
     background-color: rgba(245,233,233,.5);
 }
@@ -138,6 +195,10 @@ div.row{
   text-decoration: none;
   cursor: pointer;
 }
+
+
+
+
 
 input{
   font-size: 1em;

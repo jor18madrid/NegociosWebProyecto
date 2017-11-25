@@ -1,13 +1,9 @@
-<script>
-
-</script>
-
-
-
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Anton|Oswald" rel="stylesheet">
     <title>A Beltran Copiadora Inicio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
@@ -15,7 +11,6 @@
     <header>
       <h1>A.BELTRAN COPIADORA</h1>
     </header>
-
     <div class="slider">
       <ul id="slider_slide">
         <li><img src="public/imgs/1.jpeg" alt="1" /></li>

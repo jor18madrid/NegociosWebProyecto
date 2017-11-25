@@ -1,3 +1,7 @@
+<script type="text/javascript">
+
+</script>
+
 <!DOCTYPE html>
     <html>
         <head>
@@ -5,6 +9,8 @@
             <title>{{page_title}}</title>
             <meta name="viewport" content="width=device-width, initial-scale=1"/>
             <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+            <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css?family=Anton|Oswald" rel="stylesheet">
             <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
             <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -16,17 +22,22 @@
         <body>
             <div class="menu">
                 <ul>
-                    <li><a href="index.php?page=home">Home</a></li>
-                    <li><a href="index.php?page=productos">Productos</a></li>
-                    <li><a href="index.php?page=vision">Vision</a></li>
-                    <li><a href="index.php?page=logout">Cerrar Sesión</a></li>
+                    <li><a href="index.php?page=home">INICIO</a></li>
+                    <li><a href="index.php?page=productos">PRODUCTOS</a></li>
+                    <li><a href="index.php?page=soporte">SOPORTE</a></li>
+                    <li><a href="index.php?page=sugerencias">SUGERENCIAS</a></li>
+                    <li><a href="index.php?page=logout">CERRAR CESIÓN</a></li>
+                     <div class="Usuario">
+                    <img src="public/imgs/usuario2.png">
+                    <input type="text" name="txtUsuarioLogueado" value="Usuario" disabled id="txtUsuarioLogueado">
+                    </div>
                 </ul>
             </div>
             <div class="contenido">
                 {{{page_content}}}
             </div>
             <div class="footer">
-                Derechos Reservados 2016
+                Derechos Reservados 2017
             </div>
         </body>
     </html>

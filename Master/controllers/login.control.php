@@ -11,13 +11,22 @@
 
     if(isset($_POST["usuario_email"])){
       $errores = autenticarUsuario($_POST);
-      if(count($errores)){
-        $arrayForLogin["errores"] = $errores;
-      }else{
+      if($errores != "")
+      {
+      redirectWithMessage($errores,"index.php?page=login");
+
+      //if(count($errores)){
+        //$arrayForLogin["errores"] = $errores;
+      //}
+      }
+      else{
         //$_SESSION["usuario_email"] = $_POST["usuario_email"];
         $returnurl = (isset($_POST["returnurl"]))? (urldecode($_POST["returnurl"])||"index.php"):"index.php";
         mw_setEstaLogueado($_POST["usuario_email"],true);
-        redirectWithMessage("Credenciales Validadas.",$returnurl);
+        //redirectWithMessage("Credenciales Validadas.",$returnurl);
+        //redirectWithMessage("Credenciales Validadas.","index.php?page=home");
+        header('Location: index.php?page=home');
+
       }
     }
     $arrayForLogin["returnurl"] = (isset($_GET["returnUrl"]))?$_GET["returnUrl"]:"";
