@@ -26,9 +26,6 @@
         case "login":
               require_once("controllers/login.control.php");
               break;
-        case "acerca":
-            require_once("controllers/acerca.control.php");
-            break;
         case "productos":
             require_once("controllers/productos.control.php");
             break;
@@ -40,6 +37,18 @@
             break;
             case "responsabilidad":
             require_once("controllers/responsabilidad.control.php");
+            break;
+            case "misionValores":
+            require_once("controllers/misionValores.control.php");
+            break;
+            case "soporte":
+            require_once("controllers/soporte.control.php");
+            break;
+            case "contactenos":
+            require_once("controllers/contactenos.control.php");
+            break;
+            case "sugerencias":
+            require_once("controllers/sugerencias.control.php");
             break;
         case "logout":
             mw_setEstaLogueado("",false);

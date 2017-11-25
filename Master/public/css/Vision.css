@@ -1,5 +1,5 @@
-h1{
-  text-shadow: black;
+h2{
+
 }
 
 body{
@@ -16,7 +16,7 @@ header{
   width: 100;
   color: white;
   box-shadow: 1px solid #000;
-  text-align: center;
+  text-align: left;
 }
 nav{
   position: absolute;

@@ -17,11 +17,14 @@
             <div class="menu">
                 <ul>
                     <li><a href="index.php?page=home">Home</a></li>
-                    <li><a href="index.php?page=acerca">Acerca de Nosotros</a></li>
-                    <li><a href="index.php?page=vision">Vision</a></li>
-                    <li><a href="index.php?page=login">Iniciar Sesión</a></li>
+                  <!-- IDEA:    <li><a href="index.php?page=vision">Vision</a></li>-->
                     <li><a href="index.php?page=responsabilidad">Responsabilidad</a></li>
+                    <li><a href="index.php?page=misionValores">Mision y Valores</a></li>
+                    <li><a href="index.php?page=soporte">Soporte</a></li>
+                    <li><a href="index.php?page=contactenos">Contactenos</a></li>
+                    <li><a href="index.php?page=sugerencias">Sugerencias</a></li>
                     <li><a href="index.php?page=usuario">Usuario</a></li>
+                    <li><a href="index.php?page=login">Iniciar Sesión</a></li>
                 </ul>
             </div>
             <div class="contenido">

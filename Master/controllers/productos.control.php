@@ -4,7 +4,6 @@
  * Created By OJBA
  */
   require_once("libs/template_engine.php");
-
   require_once("models/productos.model.php");
 
   function run(){
