@@ -58,7 +58,6 @@
             {
               session_destroy();
               redirectWithMessage("Ingresado Satisfactoriamente.","index.php?page=usuario");
-
             }
           }
         }
@@ -67,7 +66,6 @@
     $data = array("txtNombre" => $txtNombre,
                   "txtMail" => $txtMail,
                   );
-  
     renderizar("usuario",$data);
   }
   run();

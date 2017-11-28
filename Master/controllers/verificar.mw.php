@@ -4,6 +4,7 @@
 
     function mw_estaLogueado(){
         if( isset($_SESSION["userLogged"]) && $_SESSION["userLogged"] == true){
+          addToContext("usuario_email", $_SESSION["userName"]);
           return true;
         }else{
           $_SESSION["userLogged"] = false;

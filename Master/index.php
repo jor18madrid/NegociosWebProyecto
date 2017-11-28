@@ -51,10 +51,10 @@
             require_once("controllers/sugerencias.control.php");
             break;
         case "logout":
+           mw_setEstaLogueado("",false);
+           redirectWithMessage("Ha cerrado sesión satisfactoriamente!");
+          //soloMensaje("¿Desea cerrar sesión?");
 
-            //redirectWithMessage("Ha cerrado sesión satisfactoriamente!");
-            soloMensaje("¿Desea cerrar sesion?");
-            mw_setEstaLogueado("",false);
             break;
             case "usuario":
             require_once("controllers/usuario.control.php");

@@ -26,10 +26,10 @@
                     <li><a href="index.php?page=productos">PRODUCTOS</a></li>
                     <li><a href="index.php?page=soporte">SOPORTE</a></li>
                     <li><a href="index.php?page=sugerencias">SUGERENCIAS</a></li>
-                    <li><a href="index.php?page=logout">CERRAR CESIÓN</a></li>
+                    <li><a href="index.php?page=logout">CERRAR SESIÓN</a></li>
                      <div class="Usuario">
                     <img src="public/imgs/usuario2.png">
-                    <input type="text" name="txtUsuarioLogueado" value="Usuario" disabled id="txtUsuarioLogueado">
+                    <input type="text" name="txtUsuarioLogueado" value="{{usuario_email}}" disabled id="txtUsuarioLogueado">
                     </div>
                 </ul>
             </div>
